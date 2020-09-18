@@ -15,17 +15,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image-3" translatesAutoresizingMaskIntoConstraints="NO" id="HwW-7k-1vI">
+                                <rect key="frame" x="78" y="488" width="218" height="102"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID19-Tracer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-FS-Yid">
-                                <rect key="frame" x="139" y="637" width="118.5" height="21"/>
+                                <rect key="frame" x="128" y="618" width="118.5" height="21"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="6gA-FS-Yid" secondAttribute="centerX" constant="-10.5" id="3BA-GL-lwf"/>
-                            <constraint firstAttribute="centerY" secondItem="6gA-FS-Yid" secondAttribute="centerY" constant="-314" id="8VX-gO-JQB"/>
+                            <constraint firstAttribute="centerX" secondItem="6gA-FS-Yid" secondAttribute="centerX" constant="0.25" id="3BA-GL-lwf"/>
+                            <constraint firstAttribute="centerY" secondItem="6gA-FS-Yid" secondAttribute="centerY" constant="-295" id="8VX-gO-JQB"/>
+                            <constraint firstItem="HwW-7k-1vI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="488" id="lPB-gk-OPx"/>
+                            <constraint firstItem="HwW-7k-1vI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ol2-rM-C6G"/>
+                            <constraint firstItem="HwW-7k-1vI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="pj1-mq-Rxr"/>
+                            <constraint firstItem="6gA-FS-Yid" firstAttribute="top" secondItem="HwW-7k-1vI" secondAttribute="bottom" constant="28" id="wHH-me-89J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,4 +42,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image-3" width="1500" height="1000"/>
+    </resources>
 </document>

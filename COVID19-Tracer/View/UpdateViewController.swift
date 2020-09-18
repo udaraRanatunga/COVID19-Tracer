@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class UpdateViewController: UIViewController {
 
@@ -14,8 +16,11 @@ class UpdateViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .lightGray;
+        
+        
     }
 
+   
 
 }
 
