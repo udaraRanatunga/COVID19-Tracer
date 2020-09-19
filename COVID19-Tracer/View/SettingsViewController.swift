@@ -7,13 +7,24 @@
 //
 
 import UIKit
-
+import Firebase
 class SettingsViewController: UIViewController {
-
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray;
+          
         // Do any additional setup after loading the view.
+    }
+    @IBAction func logout(_ sender: UIButton) {
+        let auth = Auth.auth()
+        do{
+            try auth.signOut()
+            self.dismiss(animated: true,completion: nil)        }
+        catch let signOutError {
+            print("error");
+    }
+        
+        
     }
     
 
