@@ -40,10 +40,10 @@ class ProfileViewController: UIViewController {
         ref?.child("Users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
           // Get user value
             let value = snapshot.value as? NSDictionary;
-            var course1: String? = value?["course"] as? String ?? "";
-            var hometown1: String? = value?["hometown"] as? String ?? "";
-            var faculty1: String? = value?["faculty"] as? String ?? "";
-            var temp1: Double? = value?["temp"] as? Double ?? 0.00;
+            let course1: String? = value?["course"] as? String ?? "";
+            let hometown1: String? = value?["hometown"] as? String ?? "";
+            let faculty1: String? = value?["faculty"] as? String ?? "";
+            let temp1: Double? = value?["temp"] as? Double ?? 0.00;
             self.hometown.text = hometown1;
             self.course.text = course1;
             self.faculty.text = faculty1;
@@ -62,14 +62,6 @@ class ProfileViewController: UIViewController {
         ref?.child("Users").child(uid!).child("hometown").setValue(hometown.text);
         ref?.child("Users").child(uid!).child("faculty").setValue(faculty.text);    }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

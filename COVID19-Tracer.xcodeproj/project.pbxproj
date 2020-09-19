@@ -188,13 +188,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		6200CDFC2510E7ED002DD5FF /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		6200CDFD2510E7F5002DD5FF /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +196,6 @@
 				6200CDC72510E5D5002DD5FF /* HomeViewController.swift */,
 				6264A2CF25126B7B004F4CF5 /* LoginViewController.swift */,
 				626B43A32515F9DC00D7BE3E /* ProfileViewController.swift */,
-				6200CDFC2510E7ED002DD5FF /* Service */,
 			);
 			path = View;
 			sourceTree = "<group>";
