@@ -10,6 +10,10 @@ import UIKit
 class SurveySixViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
+        
     }
     
+    @IBAction func complete(_ sender: UIButton) {
+        performSegue(withIdentifier: "backtocreate", sender: self)
+             }
 }
