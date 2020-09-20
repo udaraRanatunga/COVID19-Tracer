@@ -12,6 +12,7 @@ import Firebase
 class SurveyFiveViewController: UIViewController {
     var uid: String? = nil;
     var ref:DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -26,13 +27,17 @@ class SurveyFiveViewController: UIViewController {
     
   
     @IBAction func clickYes(_ sender: UIButton) {
+        print("inside click yes final")
         ref?.child("Survey").child(uid!).child("5").setValue(1);
-        performSegue(withIdentifier: "survey6", sender: self)    }
+        
+        performSegue(withIdentifier: "complete", sender: self)    }
     
     
     @IBAction func clickNo(_ sender: UIButton) {
+        print("inside click no final")
         ref?.child("Survey").child(uid!).child("5").setValue(0);
-        performSegue(withIdentifier: "survey6", sender: self)    }
+        
+        performSegue(withIdentifier: "complete", sender: self)    }
     /*
     // MARK: - Navigation
 
