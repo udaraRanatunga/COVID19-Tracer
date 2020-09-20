@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationController?.popToRootViewController(animated: true)        // Do any additional setup after loading the view.
         checkLocationServices()
         
     }
