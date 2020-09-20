@@ -57,8 +57,10 @@
 			<false/>
 		</dict>
 	</dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>For your purpose</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Used for your purposes in the app</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Used for your purposes in the app</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

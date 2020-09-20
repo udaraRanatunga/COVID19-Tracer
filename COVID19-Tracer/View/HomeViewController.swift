@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, MKMapViewDelegate {
     let locationManager = CLLocationManager()
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
       }
     }
     func checkLocationAuthorization() {
+      mapView.delegate = self
       switch CLLocationManager.authorizationStatus() {
       case .authorizedWhenInUse:
         mapView.showsUserLocation = true
