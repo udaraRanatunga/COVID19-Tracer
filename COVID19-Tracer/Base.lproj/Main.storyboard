@@ -657,7 +657,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPl-Uc-bOX">
-                                <rect key="frame" x="20" y="240.5" width="374" height="398.5"/>
+                                <rect key="frame" x="20" y="235" width="374" height="355"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Update your temperature" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="7zS-8P-yd2">
                                         <rect key="frame" x="97" y="195.5" width="191" height="38"/>
@@ -722,7 +722,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI4-fd-vGw">
-                                <rect key="frame" x="333" y="126" width="45" height="30.5"/>
+                                <rect key="frame" x="333" y="126" width="45" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1656,7 +1656,7 @@
             <objects>
                 <viewController id="oZf-vc-32o" customClass="SurveySixViewController" customModule="COVID19_Tracer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bm-pg-8tV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Survey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE4-Gb-mea">
@@ -1713,7 +1713,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cEB-0n-x9O"/>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="show" identifier="backtocreate" id="COI-4y-yfn"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="backtocreate" id="HPE-2Z-41C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvp-9R-Bqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1742,8 +1742,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OgH-VC-cXO"/>
-        <segue reference="COI-4y-yfn"/>
+        <segue reference="HPE-2Z-41C"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="32" height="32"/>
