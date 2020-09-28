@@ -8,8 +8,8 @@ This ios application has been developed using swift to give information to stude
 
 ## Installation Notes:
 Update the podfile using the below commands in the terminal
--pod update
--pod install 
+- pod update
+- pod install 
 
 ## Tests
 - UnitTests and UITests are included in the project.
